@@ -1,7 +1,5 @@
 # sprout-wrap
 
-[![Build Status](https://travis-ci.org/pivotal-sprout/sprout-wrap.png?branch=master)](https://travis-ci.org/pivotal-sprout/sprout-wrap)
-
 ## Prerequisites
 
 [Download](https://developer.apple.com/support/xcode/) and install XCode or the XCode command line tools.
@@ -13,8 +11,10 @@ To provision your machine, open up Terminal and enter the following:
 ```sh
 sudo xcodebuild -license
 xcode-select --install
-git clone https://github.com/pivotal-sprout/sprout-wrap.git
+git clone https://github.com/raebot/sprout-wrap.git
 cd sprout-wrap
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # install Homebrew with Ruby
+brew install rbenv
 caffeinate ./sprout
 ```
 
@@ -32,10 +32,6 @@ then try downgrading those errors like this:
 
     sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future bundle
 
-### Command Line Tool Update Server
-
-If you receive a message about the update server being unavailable and are on Mavericks, then you already have the command line tools.
-
 ## Customization
 
 This project uses [soloist](https://github.com/mkocher/soloist) and [librarian-chef](https://github.com/applicationsonline/librarian-chef)
@@ -44,8 +40,7 @@ to run a subset of the recipes in sprout's cookbooks.
 [Fork it](https://github.com/pivotal-sprout/sprout-wrap/fork) to 
 customize its [attributes](http://docs.chef.io/attributes.html) in [soloistrc](/soloistrc) and the list of recipes 
 you'd like to use for your team. You may also want to add other cookbooks to its [Cheffile](/Cheffile), perhaps one 
-of the many [community cookbooks](https://supermarket.chef.io/cookbooks). By default it configures an OS X 
-Mavericks workstation for Ruby development.
+of the many [community cookbooks](https://supermarket.chef.io/cookbooks). By default it configures a workstation for Ruby development.
 
 Finally, if you've never used Chef before - we highly recommend you buy &amp; watch [this excellent 17 minute screencast](http://railscasts.com/episodes/339-chef-solo-basics) by Ryan Bates. 
 
