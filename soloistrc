@@ -28,39 +28,27 @@ recipes:
 # development (rails)
 - sprout-rbenv
 - sprout-ruby
-- sprout-mysql
 - sprout-postgresql
 
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
+- sprout-osx-apps::sublime_text
 - sprout-jetbrains-editors::rubymine
 
 node_attributes:
   sprout:
     git:
-      domain: pivotal.io
+      domain: gmail.com
+      prefix: raebonfanti
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
-      projects:
-        -
-          name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+        - initials: rb
+          name: Rae Bonfanti
+          username: raebot
     terminal:
       default_profile: 'Pro'
     settings:
       clock_format: EEE MMM d  h:mm:ss a
     dock_preferences:
-      orientation: 'left'
+      orientation: ‘bottom’
       auto_hide: true
       clear_apps: true
       tile_size: 35
@@ -84,17 +72,11 @@ node_attributes:
       - wget
       - rbenv-binstubs
     casks:
-      - firefox
+      - ccmenu
       - flycut
       - rowanj-gitx
-      - github-desktop
+      - 1password
+      - firefox
       - google-chrome
-      - google-drive
-      - google-hangouts
-      - macvim
-      - skype
-      - textmate
-      - vagrant
-      - virtualbox
       - xquartz
       - xscope
