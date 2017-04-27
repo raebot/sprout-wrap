@@ -27,7 +27,6 @@ recipes:
 
 # development (rails)
 - sprout-ruby
-- sprout-postgresql
 
 # apps (editors)
 - sprout-osx-apps::sublime_text
@@ -70,6 +69,7 @@ node_attributes:
       - watch
       - wget
       - rbenv-binstubs
+      - postgres
     casks:
       - ccmenu
       - flycut
