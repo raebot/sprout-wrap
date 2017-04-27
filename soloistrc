@@ -63,6 +63,7 @@ node_attributes:
       - pstree
       - qt
       - ssh-copy-id
+      - rbenv
       - tmux
       - tree
       - watch

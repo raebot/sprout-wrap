@@ -13,8 +13,6 @@ sudo xcodebuild -license
 xcode-select --install
 git clone https://github.com/raebot/sprout-wrap.git
 cd sprout-wrap
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # install Homebrew with Ruby
-brew install rbenv
 caffeinate ./sprout
 ```
 
