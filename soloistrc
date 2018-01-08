@@ -8,7 +8,6 @@ recipes:
 - homebrew::install_casks
 
 # apps
-- sprout-osx-apps::iterm2
 - sprout-osx-apps::shiftit
 
 # settings
@@ -28,8 +27,6 @@ recipes:
 - sprout-ruby
 
 # apps (editors)
-- sprout-osx-apps::sublime_text
-- sprout-jetbrains-editors::rubymine
 
 node_attributes:
   sprout:
@@ -72,10 +69,18 @@ node_attributes:
       - postgres
     casks:
       - ccmenu
-      - flycut
-      - rowanj-gitx
-      - 1password
-      - firefox
       - google-chrome
       - xquartz
       - xscope
+      - iterm2
+      - sublime-text
+      - rubymine
+      - zeplin
+      - transmit
+      - slack
+      - atom
+      - dash
+      - licecap
+      - ngrok
+      - alfred
+      - blue-jeans
