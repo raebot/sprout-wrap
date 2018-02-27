@@ -3,16 +3,15 @@ SITE
   specs:
     build-essential (3.2.0)
       seven_zip (>= 0.0.0)
-    chef_handler (1.4.0)
     dmg (2.4.0)
-    homebrew (2.1.0)
-      build-essential (>= 2.1.2)
+    homebrew (4.2.0)
     mingw (0.1.1)
       seven_zip (>= 0.0.0)
-    seven_zip (2.0.1)
+    ohai (5.2.0)
+    seven_zip (2.0.2)
       windows (>= 1.2.2)
-    windows (1.42.0)
-      chef_handler (>= 0.0.0)
+    windows (3.4.3)
+      ohai (>= 4.0.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/osx
@@ -20,14 +19,6 @@ GIT
   sha: 57820f0c0f4b08e9cff82a57a7489f9dcc9345f7
   specs:
     osx (0.1.0)
-
-GIT
-  remote: https://github.com/pivotal-sprout/sprout-base
-  ref: master
-  sha: 689f8b6d2a679c076cf41e8fc7ab3cda9617d4fd
-  specs:
-    sprout-base (0.5.0)
-      homebrew (>= 0.0.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/sprout-git
@@ -128,6 +119,14 @@ GIT
     sprout-terminal (0.1.0)
       osx (>= 0.0.0)
       sprout-base (>= 0.0.0)
+
+GIT
+  remote: https://github.com/raebot/sprout-base
+  ref: master
+  sha: a93bae4283ffbc4ca706a91b47e000ac1ea1685f
+  specs:
+    sprout-base (0.5.0)
+      homebrew (>= 0.0.0)
 
 DEPENDENCIES
   build-essential (= 3.2.0)
